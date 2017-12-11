@@ -9,11 +9,11 @@ import (
 type Serve int
 
 func (m Serve) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	data, err := ioutil.ReadFile("data.json")
+	res, err := ioutil.ReadFile("data.json")
 	if err != nil {
 
 	}
-	fmt.Fprintln(w, string(data))
+	fmt.Fprintln(w, string(res))
 }
 
 func main() {
