@@ -1,1 +1,1 @@
-FROM golang:latest
+FROM golang:onbuild
